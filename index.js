@@ -10,7 +10,15 @@
 
 */
 
-const burgerButton = document.querySelector(".header__menu-burger");
+const burgerButton = document.getElementById("burger");
+const headerMenu = document.getElementById("header__menu");
+
 burgerButton.addEventListener("click", () => {
-  console.log("nvgtrfkujvng");
+  if (!burgerButton.classList.contains("header__menu-burger-active")) {
+    burgerButton.classList.add("header__menu-burger-active");
+    headerMenu.classList.add("header__menu-active");
+  } else {
+    burgerButton.classList.remove("header__menu-burger-active");
+    headerMenu.classList.remove("header__menu-active");
+  }
 });
