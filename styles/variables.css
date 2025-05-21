@@ -1,0 +1,8 @@
+body {
+  --color-primary: #f1cdb3;
+  --color-light-xl: #ffffff;
+  --color-dark-s: #cdcdcd;
+  --font-family-primary: "Arial", sans-serif;
+  --font-family-secondary: "Georgia", sans-serif;
+  --color-violet: #7a4d88;
+}

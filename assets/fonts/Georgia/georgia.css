@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/georgia.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/georgia.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/georgia.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/georgia.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */ url("../fonts/georgia.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/georgia.svg#georgia") format("svg"); /* Chrome < 4, Legacy iOS */
+}

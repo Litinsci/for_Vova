@@ -1,0 +1,127 @@
+.header {
+  background-color: var(--color-violet);
+  width: 100%;
+  margin-inline: auto;
+  padding-top: 30px;
+
+  padding-bottom: 20px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  max-width: 184px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header__logo-title {
+  color: var(--color-primary);
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.header__logo-subtitle {
+  color: var(--color-light-xl);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.header__menu {
+  max-width: 443px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-element {
+  color: var(--color-dark-s);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.header__menu-burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    align-items: center;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu {
+    background-color: var(--color-violet);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    transition: 0.3s;
+  }
+
+  .header__menu-element {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .header__menu-burger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+
+  .header__menu-burger-element {
+    width: 30px;
+    border: 2px solid var(--color-primary);
+  }
+
+  .header__menu-burger-element:nth-child(1) {
+    position: absolute;
+    /* top: 30px; */
+    /* right: 40px; */
+    transition: 0.3s;
+  }
+
+  .header__menu-burger-element:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    /* right: 40px; */
+    transition: 0.3s;
+  }
+
+  .header__menu-burger-element:nth-child(3) {
+    position: absolute;
+    top: 20px;
+    /* right: 40px; */
+    transition: 0.3s;
+  }
+
+  .header__menu-burger-active .header__menu-burger-element:nth-child(1) {
+    transform: rotate(45deg);
+    top: 15px;
+    transition: 0.3s;
+  }
+
+  .header__menu-burger-active .header__menu-burger-element:nth-child(2) {
+    display: none;
+  }
+
+  .header__menu-burger-active .header__menu-burger-element:nth-child(3) {
+    transform: rotate(-225deg);
+    transition: 0.3s;
+    top: 15px;
+  }
+}
