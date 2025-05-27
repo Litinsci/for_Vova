@@ -10,15 +10,26 @@
 
 */
 
-const burgerButton = document.getElementById("burger");
-const headerMenu = document.getElementById("header__menu");
+// const burgerButton = document.getElementById("burger");
+// const headerMenu = document.getElementById("header__menu");
 
-burgerButton.addEventListener("click", () => {
-  if (!burgerButton.classList.contains("header__menu-burger-active")) {
-    burgerButton.classList.add("header__menu-burger-active");
-    headerMenu.classList.add("header__menu-active");
-  } else {
-    burgerButton.classList.remove("header__menu-burger-active");
-    headerMenu.classList.remove("header__menu-active");
-  }
-});
+// burgerButton.addEventListener("click", () => {
+//   if (!burgerButton.classList.contains("header__menu-burger-active")) {
+//     burgerButton.classList.add("header__menu-burger-active");
+//     headerMenu.classList.add("header__menu-active");
+//   } else {
+//     burgerButton.classList.remove("header__menu-burger-active");
+//     headerMenu.classList.remove("header__menu-active");
+//   }
+// });
+
+/*
+
+Есть список пользователей, у каждого есть имя и роль(админ, сотрудник, редактор), 
+    мы должны сделать отдельные списки
+        1. Сотрудники
+        2. Админы
+
+При обращении к пользователю - каждый из них должен иметь метод который выведет в консоль ('Привет, я ' + [его имя])
+
+*/

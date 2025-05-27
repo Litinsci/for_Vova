@@ -1,0 +1,77 @@
+@import url("global.css");
+@import url("reset.css");
+@import url("variables.css");
+
+.users {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--color-black);
+  margin-top: 74px;
+}
+
+.users__button-group {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.users__button {
+  padding: 13px 20px;
+  border-radius: 99px;
+  border: 1px var(--color-blue) solid;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--color-blue);
+}
+
+.users__button-active {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.users__card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.users__card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--color-white);
+  width: 275px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+  padding-block: 5px;
+  padding-left: 5px;
+}
+
+.users__card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light-blue);
+}
+
+.users__card-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--color-dark-grey);
+}
+
+.users__card.users__card-admin .users__card-icon {
+  background-color: var(--color-red);
+}
+
+.users__card.users__card-editor .users__card-icon {
+  background-color: var(--color-green);
+}

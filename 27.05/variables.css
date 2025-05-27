@@ -1,0 +1,11 @@
+body {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light-grey: #f6f8fc;
+  --color-dark-grey: #050505;
+  --color-light-blue: rgba(131, 148, 167, 0.1);
+  --color-blue: #4361ee;
+  --color-red: rgba(255, 59, 69, 0.1);
+  --color-green: rgba(92, 255, 59, 0.1);
+  --font-family-primary: "Roboto", sans-serif;
+}
